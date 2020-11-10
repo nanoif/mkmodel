@@ -1,0 +1,87 @@
+/* note block */
+.generalcy {
+    font-family: cycn;
+}
+
+.generalcy p, .generalcy ul {
+    font-size: 0.736rem;
+}
+
+.generalcy ul ul {
+    font-size: 99%;
+}
+
+
+/* title */
+.generalcy h1,
+.generalcy h2,
+.generalcy h3,
+.generalcy h4,
+.generalcy h5,
+.generalcy h6 {
+    font-family: cycn, cycn-eng;
+}
+
+.generalcy h3 {
+    font-size: 1.04rem;
+}
+
+/* left contents */
+div.md-sidebar.md-sidebar--primary ul.md-nav__list {
+    font-family: cycn-eng;
+    font-size: 0.668rem;
+}
+
+/* right contents */
+div.md-sidebar.md-sidebar--secondary ul.md-nav__list {
+    font-family: cycn, cycn-eng;
+    font-size: 16px;
+}
+
+/* font size of general English words */
+.generalcy cy {
+	font-family: cycn-eng;
+	font-size: 0.677rem;
+}
+
+/* font size of mathematical English words */
+.generalcy msf {
+	font-family: msf;
+}
+
+.generalcy mag {
+    font-family: m;
+    font-size: 0.788rem;
+}
+
+/*
+     default setting of code blocks 
+*/ 
+
+/* left table of code block */
+.generalcy .linenodiv {
+	/* margin-top: -0.080rem; */
+	margin-left: -0.200rem;
+}
+
+.generalcy div.linenodiv pre {
+	font-family: Monaco;
+	font-size: 0.588rem;
+    line-height: 24px; 
+    margin-bottom: -10px; /* why: remaind a little tail at bottom */
+}
+
+.generalcy .highlighttable code {
+	font-family: Monaco;
+	font-size: 0.588rem;
+	line-height: 24px; 
+}
+
+/* comments */
+.highlight .c1, .highlight .cm, .highlight .sd, .highlight .ch, .highlight .cs {
+    color: #9991c4;
+    font-family: Consolas;
+    font-size: 0.595rem;
+    font-style: italic;
+	line-height: 2px; 
+}

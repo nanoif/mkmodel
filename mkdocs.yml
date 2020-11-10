@@ -1,0 +1,58 @@
+site_name: MkModel
+
+theme:
+  name: null
+  custom_dir: material
+  palette:
+    scheme: mkmodel
+  font: false
+  language: zh
+  features:
+    # - navigation.instant
+    - navigation.tabs
+    - toc.autohide
+  icon:
+    logo: logo
+
+extra_css:
+  - css/general.css
+  - css/fonts.css
+  - css/code-admonition.css
+  - css/generalcy.css
+  - css/katex.css
+  - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
+
+extra_javascript:
+  - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js'
+  - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js'
+  - 'js/katex.js'
+  - 'js/font.js'
+
+
+nav:
+  - general: index.md
+  - code: code.md
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+      linenums_style: table
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - footnotes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: 🎶
+      toc_depth: 3 # Define the range of levels to be included in the table of contents
+
+plugins:
+  - search
