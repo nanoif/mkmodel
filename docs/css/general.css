@@ -142,3 +142,9 @@
 .md-typeset details.caution ul {
     margin-top: -4px;
 }
+
+/* inline code */
+.md-typeset p code, .md-typeset li code {
+    font-family: Monaco;
+    font-size: 0.596rem;
+}

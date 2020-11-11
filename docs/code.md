@@ -1,5 +1,9 @@
 <font class="generalcy">
 
+### Inline Codes
+
+函数 `Insert()` 插入一个结点，通过 `print(**kwargs)` 方法输出可视化信息
+
 ### Normal Code Blocks 
 
 ```C
