@@ -65,7 +65,7 @@
 /* label of tabbed set */
 .md-typeset .admonition.adcodes div.tabbed-set label,
 .md-typeset details.adcodes div.tabbed-set label {
-    font-family: Monaco;
+    font-family: Monaco-inside;
     margin-left: 15px; /* interval */
 }
 

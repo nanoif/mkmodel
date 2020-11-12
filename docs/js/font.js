@@ -27,7 +27,7 @@ for (var ti = 0; ti < dest_tags.length; ++ti) {
             offset += (head.length + tail.length);
         }
         dest_tags[ti][i].innerHTML = nstr;
-        console.log(nstr);
+        // console.log(nstr);
     }
 }
 

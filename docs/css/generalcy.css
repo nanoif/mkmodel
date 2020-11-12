@@ -29,13 +29,13 @@
 /* left contents */
 div.md-sidebar.md-sidebar--primary ul.md-nav__list {
     font-family: cycn-eng;
-    font-size: 0.668rem;
+    font-size: 0.672rem;
 }
 
 /* right contents */
 div.md-sidebar.md-sidebar--secondary ul.md-nav__list {
     font-family: cycn, cycn-eng;
-    font-size: 16px;
+    font-size: 0.684rem;
 }
 
 /* font size of general English words */
@@ -65,14 +65,14 @@ div.md-sidebar.md-sidebar--secondary ul.md-nav__list {
 }
 
 .generalcy div.linenodiv pre {
-	font-family: Monaco;
+	font-family: Monaco-inside;
 	font-size: 0.588rem;
     line-height: 24px; 
     margin-bottom: -10px; /* why: remaind a little tail at bottom */
 }
 
 .generalcy .highlighttable code {
-	font-family: Monaco;
+	font-family: Monaco-inside;
 	font-size: 0.588rem;
 	line-height: 24px; 
 }

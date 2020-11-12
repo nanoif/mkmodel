@@ -158,9 +158,9 @@ span.ikt {
 /* Monoca */
 
 @font-face {
-    font-family: 'Monaco';
+    font-family: 'Monaco-inside';
 	src: 
-		url('site-fonts/monaco/monaco.ttf') format('truetype'); 
+		url('site-fonts/monaco/Monaco.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }

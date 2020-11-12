@@ -145,6 +145,6 @@
 
 /* inline code */
 .md-typeset p code, .md-typeset li code {
-    font-family: Monaco;
+    font-family: Monaco-inside;
     font-size: 0.596rem;
 }
