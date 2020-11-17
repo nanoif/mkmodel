@@ -15,7 +15,7 @@
 .md-typeset ul {
     margin-top:       -12px;
     margin-bottom:    10px;
-    line-height:      29px;
+    line-height:      26px;
 }
 
 .md-typeset ul li {
@@ -26,7 +26,7 @@
 .md-typeset ul li ul {
     margin-top:       10px;
     margin-bottom:    10px;
-    line-height:      28px;
+    line-height:      26px;
     list-style-type:  circle;
 }
 
@@ -147,4 +147,9 @@
 .md-typeset p code, .md-typeset li code {
     font-family: Monaco-inside;
     font-size: 0.596rem;
+}
+
+/* top nav */
+div.md-container nav.md-tabs {
+    font-family: cycn-eng;
 }

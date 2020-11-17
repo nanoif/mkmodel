@@ -1,0 +1,53 @@
+/* default table */
+
+:root {
+    --deep-color-simple-table-border: #666666;
+}
+
+.md-typeset__table table:not([class]) {
+    font-family: Consolas, "思源黑体 CN"; /* 英文字体写在前, 中英文分离 */
+	border-collapse: collapse; /* 是否将表格两边折叠为一条线 */
+	margin-left: 1px;        /* 表格整体与左侧的距离 */
+    font-size: 14px;
+    /* important override: */ 
+    box-shadow: none;
+    display: table;
+}
+
+
+
+/* general th */
+.md-typeset__table table:not([class]) thead th {
+    text-shadow: 0px 0px 0.5px #252424; 
+    padding: 6px 18px 4px 18px; /* padding: up right down left */
+    background-color: #ffffff;
+    color: #160303;
+	border-top: none;
+    border-right: none;
+    border-left: 1px solid var(--deep-color-simple-table-border);
+    border-bottom: 1px solid var(--deep-color-simple-table-border);
+}
+
+/* first th */
+.md-typeset__table table:not([class]) thead th.firsthead {
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid var(--deep-color-simple-table-border);
+}
+
+/* general td */
+.md-typeset__table table:not([class]) tbody td {
+    padding: 5px 18px 5px 18px;
+    border-left: 1px solid var(--deep-color-simple-table-border);
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+/* first-column td */
+.md-typeset__table table:not([class]) tbody td.firstcol {
+    border-left:none;
+    border-bottom:none;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid var(--deep-color-simple-table-border);
+}

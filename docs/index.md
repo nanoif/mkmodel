@@ -59,21 +59,33 @@ $
 
 - en:
     - cycn-eng:&emsp; <font face="cycn-eng">If winter comes , can spring be far behind ?</font>
-    - monaco:&emsp; <font face="Monaco">If winter comes , can spring be far behind ?</font>
+    - monaco:&emsp; <font face="Monaco-inside">If winter comes , can spring be far behind ?</font>
     - consolas:&emsp; <font face="Consolas">If winter comes , can spring be far behind ?</font>
     - m:&emsp; <mag>If winter comes , can spring be far behind ?</mag>
     - msf:&emsp; <font face="msf">If winter comes , can spring be far behind ?</font>
 
 
 
-### Table: ToDo
+### Table: Simple Style
 
+<font class="30_20_20">
 
-| Method      | Description                          |
-| :---------: | :---------------------------------- |
-| `GET`       | :material-check:     Fetch resource  |
-| `PUT`       | :material-check-all: Update resource |
-| `DELETE`    | :material-close:     Delete resource |
+| C Type      | Min Value &emsp;&emsp;&emsp;&emsp;| Max Value &emsp;&emsp;&emsp;&emsp;|
+| :--------- | ------------------------------------------------: |-----:|
+| `[signed] char`   |-127          | 127| 
+| `unsigned char`   | 0            | 255| 
+| `short`           |-32767        | 32767| 
+| `unsigned short`  |0             | 65535| 
+| `int`             |-32767        | 32767| 
+| `unsigned`        |0             | 65535| 
+| `long`            |-2147483647   | 2147483647| 
+| `unsigned long`   |0             | 4294967295| 
+| `int32_t`         |-2147483647 | 2147483647| 
+| `uint32_t`        |0     | 4294967295| 
+| `int64_t`         |-9223372036854775808 | 9223372036854775807| 
+| `uint64_t`        |0     | 18446744073709551615| 
+
+</font>
 
 
 ### Admonitions

@@ -1,10 +1,11 @@
 /* note block */
 .generalcy {
     font-family: cycn;
+    text-shadow:0 0 1.5px #ccc !important;
 }
 
 .generalcy p, .generalcy ul {
-    font-size: 0.736rem;
+    font-size: 0.739rem;
 }
 
 .generalcy ul ul {

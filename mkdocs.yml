@@ -20,6 +20,7 @@ extra_css:
   - css/code-admonition.css
   - css/generalcy.css
   - css/katex.css
+  - css/tables.css
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
 
 extra_javascript:
@@ -27,6 +28,7 @@ extra_javascript:
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js'
   - 'js/katex.js'
   - 'js/font.js'
+  - 'js/table.js'
 
 
 nav:

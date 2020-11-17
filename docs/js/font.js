@@ -13,7 +13,7 @@ for (var ti = 0; ti < dest_tags.length; ++ti) {
         if (!dest_tags[ti][i])
             continue;
         var str = dest_tags[ti][i].innerHTML;
-        var pattern = new RegExp("(([a-zA-Z0-9])([a-zA-Z0-9]|\\s|\\n)*)|<[a-zA-Z0-9]\\s*[^>]*>(.|\\n)*</[a-zA-Z0-9]*>|((\\$((.|\n)+?)\\$))|(\\$\\$((.|\n)+?)\\$\\$)|<br>","g");
+        var pattern = new RegExp("(([a-zA-Z0-9])([a-zA-Z0-9]|\\s|\\n)*)|<[a-zA-Z0-9]\\s*[^>]*>(.|\\n)*</[a-zA-Z0-9]*>|((\\$((.|\n)+?)\\$))|(\\$\\$((.|\n)+?)\\$\\$)|<br>|<img.*>","g");
         var result;
         var nstr = str;
         var offset = 0
@@ -28,6 +28,29 @@ for (var ti = 0; ti < dest_tags.length; ++ti) {
         }
         dest_tags[ti][i].innerHTML = nstr;
         // console.log(nstr);
+    }
+}
+
+var table_margin_classes = generalcy.getElementsByTagName('font')
+for (var i = 0; i < table_margin_classes.length; ++i) {
+    var class_name = table_margin_classes[i].getAttribute('class')
+    if (class_name) {
+        var m_numbers = class_name.split(' ')[0]
+        var m_patt = new RegExp("^-?\\d+(_-?\\d+)*$", 'g')
+        if (! m_patt.test(m_numbers))
+            continue
+        var margin_table = table_margin_classes[i].getElementsByTagName('table')[0]
+        // ← ↑ ↓ →
+        if (margin_table) {
+            m_numbers_sp = m_numbers.split('_')
+            margin_table.style.marginLeft = m_numbers_sp[0] + 'px'
+            if (m_numbers_sp.length >= 2)
+                margin_table.style.marginTop = m_numbers_sp[1] + 'px'
+            if (m_numbers_sp.length >= 3)
+                margin_table.style.marginBottom = m_numbers_sp[2] + 'px'
+            if (m_numbers_sp.length >= 4)
+                margin_table.style.marginRight = m_numbers_sp[3] + 'px'
+        }
     }
 }
 
