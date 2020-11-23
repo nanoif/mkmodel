@@ -1,11 +1,11 @@
 /* note block */
 .generalcy {
     font-family: cycn;
-    text-shadow:0 0 1.5px #ccc !important;
 }
 
 .generalcy p, .generalcy ul {
-    font-size: 0.739rem;
+    font-size: 15px;
+    letter-spacing: 0.44px;
 }
 
 .generalcy ul ul {
@@ -25,6 +25,10 @@
 
 .generalcy h3 {
     font-size: 1.04rem;
+}
+
+.generalcy h4, .generalcy h3, .generalcy h2 {
+    word-spacing: 4px;
 }
 
 /* left contents */
@@ -55,34 +59,3 @@ div.md-sidebar.md-sidebar--secondary ul.md-nav__list {
     font-size: 0.788rem;
 }
 
-/*
-     default setting of code blocks 
-*/ 
-
-/* left table of code block */
-.generalcy .linenodiv {
-	/* margin-top: -0.080rem; */
-	margin-left: -0.200rem;
-}
-
-.generalcy div.linenodiv pre {
-	font-family: Monaco-inside;
-	font-size: 0.588rem;
-    line-height: 24px; 
-    margin-bottom: -10px; /* why: remaind a little tail at bottom */
-}
-
-.generalcy .highlighttable code {
-	font-family: Monaco-inside;
-	font-size: 0.588rem;
-	line-height: 24px; 
-}
-
-/* comments */
-.highlight .c1, .highlight .cm, .highlight .sd, .highlight .ch, .highlight .cs {
-    color: #9991c4;
-    font-family: Consolas;
-    font-size: 0.595rem;
-    font-style: italic;
-	line-height: 2px; 
-}

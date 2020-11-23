@@ -29,7 +29,7 @@ extra_javascript:
   - 'js/katex.js'
   - 'js/font.js'
   - 'js/table.js'
-
+  - 'js/code_style.js'
 
 nav:
   - general: index.md
@@ -44,7 +44,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight:
       use_pygments: true
-      linenums: true
       linenums_style: table
   - pymdownx.inlinehilite
   - pymdownx.tabbed
@@ -54,7 +53,7 @@ markdown_extensions:
       custom_checkbox: true
   - toc:
       permalink: 🎶
-      toc_depth: 3 # Define the range of levels to be included in the table of contents
+      toc_depth: 6 # Define the range of levels to be included in the table of contents
 
 plugins:
   - search

@@ -116,7 +116,7 @@ span.ikt {
 /* Consolas */
 
 @font-face {
-    font-family: 'Consolas';
+    font-family: 'Consolas-inside';
 	src: 
 		url('site-fonts/consolas/consola.woff2') format('woff2'),
 		url('site-fonts/consolas/consola.woff') format('woff'),
@@ -126,7 +126,7 @@ span.ikt {
 } 
 
 @font-face {
-	font-family: 'Consolas';
+	font-family: 'Consolas-inside';
 	src: 
 		url('site-fonts/consolas/consolai.woff2') format('woff2'),
 		url('site-fonts/consolas/consolai.woff') format('woff'),
@@ -136,7 +136,7 @@ span.ikt {
 } 
 
 @font-face {
-	font-family: 'Consolas';
+	font-family: 'Consolas-inside';
 	src: 
 		url('site-fonts/consolas/consolab.woff2') format('woff2'),
 		url('site-fonts/consolas/consolab.woff') format('woff'),
@@ -146,7 +146,7 @@ span.ikt {
 } 
 
 @font-face {
-	font-family: 'Consolas';
+	font-family: 'Consolas-inside';
 	src: 
 		url('site-fonts/consolas/consolaz.woff2') format('woff2'),
 		url('site-fonts/consolas/consolaz.woff') format('woff'),
