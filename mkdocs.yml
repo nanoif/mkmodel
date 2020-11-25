@@ -10,9 +10,15 @@ theme:
   features:
     # - navigation.instant
     - navigation.tabs
+    - tabs.changeicon
     - toc.autohide
+  icons:
+    home: custom/model3
+    general: custom/model1
+    test_tab: custom/model2
   icon:
-    logo: logo
+    logo: custom/computer1
+  favicon: images/favicon.png
 
 extra_css:
   - css/general.css
@@ -32,8 +38,16 @@ extra_javascript:
   - 'js/code_style.js'
 
 nav:
-  - general: index.md
-  - code: code.md
+  - general:
+      - general: general/index.md
+      - code: general/code.md
+      - nested:
+          - n1: general/nested/1.md
+  - test tab:
+      - general: test_tab/index.md
+      - code: test_tab/code.md
+      - nested:
+          - n2: test_tab/nested/2.md
 
 markdown_extensions:
   - abbr

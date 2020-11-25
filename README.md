@@ -1,6 +1,19 @@
-# When set up a new site:
+## When set up a new site:
 
-- default font face of table, and if table.inlineCode background-color
-- admonition (header) font size
-- change icons: https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
-- change color config
+#### set color scheme
+
+- make a scheme and adjust color in `general.css`
+- set the scheme in `themes - palette`
+
+#### change icons
+
+- if used navigation.tabs, and need to change icons when changing tab
+    - set `tabs.changeicon` in `features`
+    - set `tab name <-> icon name` mapping below (`home` is occupied and must be set)
+- else
+    - set in `icon - logo`
+- some icons sites
+    - https://www.flaticon.com/
+    - https://www.iconfinder.com/
+    - https://thenounproject.com/
+    - https://icons8.com/icons/
