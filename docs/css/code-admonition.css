@@ -19,6 +19,32 @@
     margin-bottom: -12px;
 }
 
+/* linenos not aligned with code lines in admonitions */
+.md-typeset .admonition.adcodes table.highlighttable td.linenos,
+.md-typeset details.adcodes table.highlighttable td.linenos,
+.md-typeset .admonition.adcodes table.highlighttable td.code code,
+.md-typeset details.adcodes table.highlighttable td.code code
+{
+    padding-top: 10.5px;
+}
+
+/* button size of setted by em */
+.md-typeset .admonition.adcodes table.highlighttable button,
+.md-typeset details.adcodes table.highlighttable button,
+.md-typeset .admonition.adcodes > div.highlight button,
+.md-typeset details.adcodes > div.highlight button {
+    width: 24px;
+    height: 24px;
+}
+
+.md-typeset .admonition.adcodes table.highlighttable button::after,
+.md-typeset details.adcodes table.highlighttable button::after,
+.md-typeset .admonition.adcodes > div.highlight button::after,
+.md-typeset details.adcodes > div.highlight button::after {
+    width: 18px;
+    height: 18px;
+}
+
 /* left border */
 .md-typeset .admonition.adcodes,
 .md-typeset details.adcodes {

@@ -27,18 +27,21 @@ console.log(os)
 if (os.indexOf('Win') == 0)
 {
     addCssRule('.generalcy .linenodiv', 'margin-left: -0.200rem;');
+    // line number column
     addCssRule('.generalcy div.linenodiv pre', 'font-family: Consolas; \
                                                 font-size: 0.678rem;        \
-                                                line-height: 22px;          \
+                                                line-height: 19.78px;          \
                                                 margin-bottom: -10px;       \
                '
     );
+    // code block
     addCssRule('.generalcy .highlight code', 'font-family: Consolas; \
                                                    font-size: 0.678rem;        \
-                                                   line-height: 22px;          \
+                                                   line-height: 19.78px;          \
                '
     );
-    addCssRule('.highlight .c1, .highlight .cm, .highlight .sd, .highlight .ch, .highlight .cs', 
+    // comment
+    addCssRule('.generalcy .highlight .c1, .generalcy .highlight .cm, .generalcy .highlight .sd, .generalcy .highlight .ch, .generalcy .highlight .cs', 
                                                 'color: #9991c4; \
                                                  font-family: Consolas-inside;  \
                                                  font-size: 0.662rem;          \
@@ -65,7 +68,7 @@ else
                                                    line-height: 23px;          \
                '
     );
-    addCssRule('.highlight .c1, .highlight .cm, .highlight .sd, .highlight .ch, .highlight .cs', 
+    addCssRule('.generalcy .highlight .c1, .generalcy .highlight .cm, .generalcy .highlight .sd, .generalcy .highlight .ch, .generalcy .highlight .cs', 
                                                 'color: #9991c4; \
                                                  font-family: Consolas-inside;  \
                                                  font-size: 0.661rem;          \
@@ -74,7 +77,7 @@ else
                '
     );
     // inline code
-    addCssRule('.md-typeset p code, .md-typeset li code', 'font-family: Monaco-inside; font-size: 0.596rem;')
+    addCssRule('.md-typeset .generalcy p code, .md-typeset .generalcy li code', 'font-family: Monaco-inside; font-size: 0.596rem;')
 }
 
 /*

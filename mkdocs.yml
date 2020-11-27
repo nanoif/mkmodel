@@ -18,15 +18,16 @@ theme:
     test_tab: custom/model2
   icon:
     logo: custom/computer1
-  favicon: images/favicon.png
+  favicon: assets/harddisk4.svg
 
 extra_css:
   - css/general.css
   - css/fonts.css
   - css/code-admonition.css
-  - css/generalcy.css
   - css/katex.css
   - css/tables.css
+  - css/extra/admonitions.css
+  - css/extra/code-blocks.css
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
 
 extra_javascript:
@@ -36,14 +37,16 @@ extra_javascript:
   - 'js/font.js'
   - 'js/table.js'
   - 'js/code_style.js'
+  - 'js/font_class_controller.js'
 
 nav:
-  - general:
+  - general👾:
       - general: general/index.md
       - code: general/code.md
-      - nested:
-          - n1: general/nested/1.md
-  - test tab:
+      - extra code blocks: general/extracb.md
+      - test_nested_tab:
+          - 1: general/nested/1.md
+  - test tab🧭:
       - general: test_tab/index.md
       - code: test_tab/code.md
       - nested:

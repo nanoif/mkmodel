@@ -17,3 +17,16 @@
     - https://www.iconfinder.com/
     - https://thenounproject.com/
     - https://icons8.com/icons/
+
+#### code blocks
+
+- make a new one:  `extra/code-blocks.css`
+- change the `line-height` for the main language cb of this site will use:
+    -  `code_style.js` for __Win__ and __Others__
+- supported language: https://pygments.org/languages/
+    - concrete names: https://pygments.org/docs/lexers/
+
+#### word wrap
+
+- `word-break: break-all;`
+- `word-wrap: break-word; overflow: hidden;`
