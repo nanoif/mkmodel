@@ -30,14 +30,14 @@ if (os.indexOf('Win') == 0)
     // line number column
     addCssRule('.generalcy div.linenodiv pre', 'font-family: Consolas; \
                                                 font-size: 0.678rem;        \
-                                                line-height: 19.78px;          \
-                                                margin-bottom: -10px;       \
+                                                line-height: 0.989rem;          \
+                                                margin-bottom: -0.5rem;       \
                '
     );
     // code block
     addCssRule('.generalcy .highlight code', 'font-family: Consolas; \
                                                    font-size: 0.678rem;        \
-                                                   line-height: 19.78px;          \
+                                                   line-height: 0.989rem;          \
                '
     );
     // comment
@@ -46,7 +46,7 @@ if (os.indexOf('Win') == 0)
                                                  font-family: Consolas-inside;  \
                                                  font-size: 0.662rem;          \
                                                  font-style: italic; \
-                                                 line-height: 2px; \
+                                                 line-height: 0.1rem; \
                '
     );
     // inline code
@@ -59,13 +59,13 @@ else
     addCssRule('.generalcy .linenodiv', 'margin-left: -0.200rem;');
     addCssRule('.generalcy div.linenodiv pre', 'font-family: Monaco-inside; \
                                                 font-size: 0.588rem;        \
-                                                line-height: 23px;          \
-                                                margin-bottom: -10px;       \
+                                                line-height: 1.15rem;          \
+                                                margin-bottom: -0.5rem;       \
                '
     );
     addCssRule('.generalcy .highlight code', 'font-family: Monaco-inside; \
                                                    font-size: 0.588rem;        \
-                                                   line-height: 23px;          \
+                                                   line-height: 1.15rem;          \
                '
     );
     addCssRule('.generalcy .highlight .c1, .generalcy .highlight .cm, .generalcy .highlight .sd, .generalcy .highlight .ch, .generalcy .highlight .cs', 
@@ -73,7 +73,7 @@ else
                                                  font-family: Consolas-inside;  \
                                                  font-size: 0.661rem;          \
                                                  font-style: italic; \
-                                                 line-height: 2px; \
+                                                 line-height: 0.1rem; \
                '
     );
     // inline code

@@ -1,6 +1,10 @@
 var generalcy = document.getElementsByClassName('generalcy')[1]
 var font_class_modules = generalcy.getElementsByTagName('font')
 
+function px2rem(px) {
+    return String(Number(px) * 0.05) + 'rem'
+}
+
 for (var i = 0; i < font_class_modules.length; ++i) {
     var class_name = font_class_modules[i].getAttribute('class')
     if (!class_name)
@@ -42,8 +46,8 @@ for (var i = 0; i < font_class_modules.length; ++i) {
         }
         // injecting
         var new_div = document.createElement("div")
-        new_div.style.marginTop = f_margin_top_whole + 'px'
-        new_div.style.marginBottom = f_margin_bottom_whole + 'px'
+        new_div.style.marginTop = px2rem(f_margin_top_whole)
+        new_div.style.marginBottom = px2rem(f_margin_bottom_whole)
         new_div.innerHTML = font_class_modules[i].innerHTML
         font_class_modules[i].innerHTML = ""
         font_class_modules[i].appendChild(new_div)
@@ -63,10 +67,9 @@ for (var i = 0; i < font_class_modules.length; ++i) {
         }
         //console.log(cb)
         hl.style.float = f_float
-        hl.style.marginTop = f_margin_top + 'px'
-        hl.style.marginBottom = f_margin_bottom + 'px'
-        cb.style.marginLeft = f_margin_left + 'px'
-        cb.style.marginRight = f_margin_right + 'px'
-
+        hl.style.marginTop = px2rem(f_margin_top)
+        hl.style.marginBottom = px2rem(f_margin_bottom)
+        cb.style.marginLeft = px2rem(f_margin_left)
+        cb.style.marginRight = px2rem(f_margin_right)
     }
 }
