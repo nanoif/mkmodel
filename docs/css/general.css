@@ -73,8 +73,8 @@ div.md-container nav.md-tabs {
 }
 
 .generalcy p, .generalcy ul {
-    font-size: 15px;
-    letter-spacing: 0.44px;
+    font-size: 0.75rem;
+    letter-spacing: 0.022rem;
 }
 
 .generalcy ul ul {
