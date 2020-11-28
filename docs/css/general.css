@@ -49,6 +49,13 @@ div.md-container nav.md-tabs {
     font-family: cycn-eng;
 }
 
+/********** blockquotes **********/
+/* blockquote {
+    word-wrap: break-word;
+    font-size: 15px;
+    letter-spacing: 0.44px;
+} */
+
 
 /*********************************************************************************/
 /*************************** FONT CLASS BLOCK: generalcy *************************/
@@ -90,6 +97,10 @@ div.md-container nav.md-tabs {
 
 .generalcy h4, .generalcy h3, .generalcy h2 {
     word-spacing: 4px;
+}
+
+.generalcy h4 {
+    font-size: 17.2px;
 }
 
 

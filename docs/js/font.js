@@ -1,9 +1,32 @@
-
+/*
+ * this file add tags to source html for rendering fonts.
+ */
 function addTag(str, start, len, head, tail) {
     return str.substr(0, start) + head + str.substr(start, len) + tail + str.substr(start + len)
 }
 
 var generalcy = document.getElementsByClassName('generalcy')[1]
+
+// add <p> tag for '<blockquote>'
+var blk_quote_tag = generalcy.getElementsByTagName('blockquote')
+for (var i = 0; i < blk_quote_tag.length; ++i) {
+    var children = blk_quote_tag[i].childNodes
+    // console.log(children)
+    for (var j = 0; j < children.length; ++j) {
+        child = children[j]
+        if (child.nodeName == '#text') {
+            dtext = child.wholeText
+            if (dtext.length == 1 && dtext == '\n') {
+                continue
+            }
+            var newp = document.createElement("p")
+            newp.innerHTML = dtext
+            blk_quote_tag[i].replaceChild(newp, child)
+        }
+    }
+}
+
+// Add <cy> tag for english words in '<p>' & '<li>' by regexp
 var ptag = generalcy.getElementsByTagName('p')
 var litag = generalcy.getElementsByTagName('li')
 var dest_tags = new Array(ptag, litag)
@@ -19,6 +42,8 @@ for (var ti = 0; ti < dest_tags.length; ++ti) {
         var offset = 0
         var head = "<cy>", tail = "</cy>"
         while ((result = pattern.exec(str)) != null)  {
+            if (ti == 2)
+                console.log(result[0])
             if (result[0].substring(0, 1) == '<' || result[0].substring(0, 1) == '$')
                 continue;
             var idx = result.index, len = result[0].length;
@@ -27,7 +52,7 @@ for (var ti = 0; ti < dest_tags.length; ++ti) {
             offset += (head.length + tail.length);
         }
         dest_tags[ti][i].innerHTML = nstr;
-        // console.log(nstr);
+        //     console.log(nstr);
     }
 }
 
