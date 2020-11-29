@@ -38,7 +38,9 @@ source_file = './utils/source-siyuan.ttf'
 output_file_name = 'sourcehan-pure'
 output_path = './docs/css/site-fonts/sourcehan/normal/'
 
+print('-' * 60)
 subset_font(source_file, output_path + output_file_name + '.ttf', zh_chars)
 subset_font(source_file, output_path + output_file_name + '.woff', zh_chars, flavor='woff')
 # subset_font(source_file, output_path + output_file_name + '.woff2', zh_chars, flavor='woff2')
 print('Total %d chinese characters' % len(zh_chars))
+print('-' * 60)
