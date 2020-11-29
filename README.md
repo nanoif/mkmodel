@@ -35,3 +35,23 @@
 #### blockquote text
 
 - set tag for text in blockquotes in `font.js` (default: `<p>`)
+
+
+## Subset Font SourceHan Automatically
+
+#### install dependency
+
+https://github.com/fonttools/fonttools
+
+```pip
+pip install fonttools
+
+# if woff2 is activated:
+pip install brotli
+```
+#### set git hook
+
+in `pre-push`
+```
+python ./utils/extract_chinese.py
+```
