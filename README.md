@@ -53,5 +53,6 @@ pip install brotli
 
 in `pre-push`
 ```
+#!/bin/bash
 python ./utils/extract_chinese.py
 ```
