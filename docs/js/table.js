@@ -1,6 +1,7 @@
 var generalcy = document.getElementsByClassName('generalcy')[1]
 var all_tables = generalcy.getElementsByTagName('table')
 
+// add some class names for table elements
 for (var i = 0; i < all_tables.length; ++i) {
     var class_name = all_tables[i].getAttribute('class')
     if (! class_name) { // locate empty-class table

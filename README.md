@@ -25,8 +25,13 @@
     -  `code_style.js` for __Win__ and __Others__
 - supported language: https://pygments.org/languages/
     - concrete names: https://pygments.org/docs/lexers/
+- set interal `<blockquote>` style 
 
 #### word wrap
 
 - `word-break: break-all;`
 - `word-wrap: break-word; overflow: hidden;`
+
+#### blockquote text
+
+- set tag for text in blockquotes in `font.js` (default: `<p>`)

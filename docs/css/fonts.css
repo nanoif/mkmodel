@@ -113,6 +113,18 @@ span.ikt {
 	font-style: italic;
 } 
 
+/* KateX TypeWriter */
+
+@font-face {
+    font-family: 'mtt';
+	src: 
+		url('site-fonts/math/ttmono/mtt.woff2') format('woff2'),
+		url('site-fonts/math/ttmono/mtt.woff') format('woff'),
+		url('site-fonts/math/ttmono/mtt.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+} 
+
 /* Consolas */
 
 @font-face {

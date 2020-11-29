@@ -3,6 +3,11 @@
     --wcode-font-family: msf;
 }
 
+/********* internal blockquote *********/
+.wcode blockquote {
+    border-left: 0.2rem solid #858383;
+}
+
 /********* highlight *********/
 .wcode div .highlight pre code {
     font-family: var(--wcode-font-family);

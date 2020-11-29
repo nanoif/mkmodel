@@ -27,9 +27,16 @@ for (var i = 0; i < blk_quote_tag.length; ++i) {
 }
 
 // Add <cy> tag for english words in '<p>' & '<li>' by regexp
+var dest_tags = []
 var ptag = generalcy.getElementsByTagName('p')
 var litag = generalcy.getElementsByTagName('li')
-var dest_tags = new Array(ptag, litag)
+var tabletdtag = generalcy.getElementsByTagName('table')
+dest_tags.push(ptag)
+dest_tags.push(litag)
+for (var i = 0; i < tabletdtag.length; ++i) {
+    dest_tags.push(tabletdtag[i].getElementsByTagName('td'))
+}
+
 
 for (var ti = 0; ti < dest_tags.length; ++ti) {
     for (var i = 0; i < dest_tags[ti].length; ++i) {

@@ -6,13 +6,18 @@
 }
 
 .md-typeset__table table:not([class]) {
-    font-family: Consolas-inside, "思源黑体 CN"; /* 英文字体写在前, 中英文分离 */
+    font-family: cycn-eng, cycn;
 	border-collapse: collapse; /* 是否将表格两边折叠为一条线 */
-	margin-left: 0.05rem;        /* 表格整体与左侧的距离 */
+	margin-left: 0.05rem;        
     font-size: var(--simple-table-font-size);
-    /* important override: */ 
+    /* important overrides: */ 
     box-shadow: none;
     display: table;
+}
+
+.md-typeset__table table:not([class]) code {
+    background-color: #ffffff;
+    font-size: 0.625rem;
 }
 
 /* general th */
@@ -44,8 +49,8 @@
 
 /* first-column td */
 .md-typeset__table table:not([class]) tbody td.firstcol {
-    border-left:none;
-    border-bottom:none;
+    border-left: none;
+    border-bottom: none;
     border-top: 0.05rem solid #ffffff;
     border-right: 0.05rem solid var(--deep-color-simple-table-border);
 }
