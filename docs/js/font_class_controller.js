@@ -1,11 +1,15 @@
 var generalcy = document.getElementsByClassName('generalcy')[1]
-var font_class_modules = generalcy.getElementsByTagName('font')
+
 
 function px2rem(px) {
     return String(Number(px) * 0.05) + 'rem'
 }
 
 var font_dict = {'cons': 'Consolas-inside', 'inh': 'inherit', 'msf': 'msf', 'mtt': 'mtt'}
+
+if (generalcy) {
+
+var font_class_modules = generalcy.getElementsByTagName('font')
 
 for (var i = 0; i < font_class_modules.length; ++i) {
     var class_name = font_class_modules[i].getAttribute('class')
@@ -90,4 +94,8 @@ for (var i = 0; i < font_class_modules.length; ++i) {
                 fontbs[bsi].style.fontFamily = font       
             }
     }
+}
+
+
+
 }

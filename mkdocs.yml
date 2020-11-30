@@ -28,6 +28,7 @@ extra_css:
   - css/tables.css
   - css/extra/admonitions.css
   - css/extra/code-blocks.css
+  - css/gadgets/book.css
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
 
 extra_javascript:
@@ -40,6 +41,7 @@ extra_javascript:
   - 'js/font_class_controller.js'
 
 nav:
+  - home: index.md
   - general👾:
       - general: general/index.md
       - code: general/code.md
@@ -71,6 +73,7 @@ markdown_extensions:
   - toc:
       permalink: 🎶
       toc_depth: 6 # Define the range of levels to be included in the table of contents
+  - meta
 
 plugins:
   - search
