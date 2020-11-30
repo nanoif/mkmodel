@@ -53,7 +53,9 @@ pip install brotli
 
 in `pre-commit`
 ```
-#!/bin/bash
-python ./utils/extract_chinese.py
-git add -f *
+#!/bin/sh
+python utils/extract_chinese.py;
+echo "add files to stage ...";
+git add -f *;
+echo "done";
 ```

@@ -33,12 +33,13 @@ def subset_font(src, dst, text, flavor=None):
     subset.save_font(font, dst, options)
 
 
+print('-' * 60)
 zh_chars = ''.join(get_charaters_set('./docs'))
 source_file = './utils/source-siyuan.ttf'
 output_file_name = 'sourcehan-pure'
 output_path = './docs/css/site-fonts/sourcehan/normal/'
 
-print('-' * 60)
+
 subset_font(source_file, output_path + output_file_name + '.ttf', zh_chars)
 subset_font(source_file, output_path + output_file_name + '.woff', zh_chars, flavor='woff')
 # subset_font(source_file, output_path + output_file_name + '.woff2', zh_chars, flavor='woff2')
