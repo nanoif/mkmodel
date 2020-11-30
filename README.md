@@ -51,8 +51,9 @@ pip install brotli
 ```
 #### set git hook
 
-in `pre-push`
+in `pre-commit`
 ```
 #!/bin/bash
 python ./utils/extract_chinese.py
+git add -f *
 ```
