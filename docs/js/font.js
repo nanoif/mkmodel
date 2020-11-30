@@ -51,8 +51,6 @@ if (generalcy)
             var offset = 0
             var head = "<cy>", tail = "</cy>"
             while ((result = pattern.exec(str)) != null)  {
-                if (ti == 2)
-                    console.log(result[0])
                 if (result[0].substring(0, 1) == '<' || result[0].substring(0, 1) == '$')
                     continue;
                 var idx = result.index, len = result[0].length;

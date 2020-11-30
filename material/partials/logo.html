@@ -15,3 +15,17 @@
   {% set icon = config.theme.icon.logo or "material/library" %}
   {% include ".icons/" ~ icon ~ ".svg" %}
 {% endif %}
+
+{% if 'colors' in config.theme['features'] %}
+  {% set colors = config.theme['colors'] %}
+  {% set tabname = page.url.split('/')[0] %}
+  {% if tabname == '' %}
+    {% set tabname = 'home' %} 
+  {% endif %} 
+  {% set color = colors[tabname] or colors['default'] or '/#000000' %}
+  {% set color = color[1:] %}
+  <script>
+  document.getElementsByClassName('md-header')[0].style.setProperty('--md-primary-fg-color', '{{color}}')
+  document.getElementsByClassName('md-tabs')[0].style.setProperty('--md-primary-fg-color', '{{color}}')
+  </script>
+{% endif %}

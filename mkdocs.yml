@@ -12,10 +12,16 @@ theme:
     - navigation.tabs
     - tabs.changeicon
     - toc.autohide
+    - colors
   icons:
     home: custom/model3
     general: custom/model1
     test_tab: custom/model2
+  colors:
+    default: /#20d1b4
+    home: /#666666
+    general: /#666666
+
   icon:
     logo: custom/computer1
   favicon: assets/harddisk4.svg

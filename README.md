@@ -36,6 +36,11 @@
 
 - set tag for text in blockquotes in `font.js` (default: `<p>`)
 
+#### activate features
+
+- `tabs.changeicon`: change icon as tab is changed, set specific icons of tab in features - icons
+- `colors`: change color as tab is changed, set specific colors of tab in feature - colors
+
 
 ## Subset Font SourceHan Automatically
 
