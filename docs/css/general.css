@@ -49,6 +49,14 @@ div.md-container nav.md-tabs {
     font-family: cycn-eng;
 }
 
+/********** image **********/
+.floatpic .caption {
+    font-family: cycn-eng, cycn;
+    line-height: 12px;
+    font-size: 0.1rem;
+    color: #7e7e7e;
+}
+
 /********** blockquotes **********/
 /* blockquote {
     word-wrap: break-word;
