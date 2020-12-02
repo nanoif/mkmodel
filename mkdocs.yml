@@ -40,11 +40,8 @@ extra_css:
 extra_javascript:
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js'
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js'
-  - 'js/font_class_controller.js'
+  - 'js/mkmain.js'
   - 'js/katex.js'
-  - 'js/font.js'
-  - 'js/table.js'
-  - 'js/code_style.js'
   
 
 nav:

@@ -7,7 +7,6 @@
     <span class="cover" id="back"><p>Cover2</p></span>
 </div>
 
-<font class="generalcy">
 
 ### Paragraph
 
@@ -84,7 +83,7 @@ $
 
 ### Table: Simple Style
 
-<font class="30_20_20">
+<font class="t_a%30&20_b%20">
 
 | C Type      | Min Value &emsp;&emsp;&emsp;&emsp;| Max Value &emsp;&emsp;&emsp;&emsp;|
 | :--------- | ------------------------------------------------: |-----:|
@@ -144,4 +143,3 @@ $
 
 ##### Nested Title (5)
 
-</font>
