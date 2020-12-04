@@ -1,13 +1,3 @@
-<div class="ibook">
-    <span class="cover" id="front"><p>general</p></span>
-    <span class="page"  id="p1"><p>code</p></span>
-    <span class="page"  id="p2"><p>extra code blocks</p></span>
-    <span class="page"  id="p3"><p>test_nested_tab</p></span>
-    <span class="page"  id="blank"><p>and more...</p></span>
-    <span class="cover" id="back"><p>Cover2</p></span>
-</div>
-
-
 ### Paragraph
 
 一说起禅智内供的鼻子，池尾地方是没一个不知道的。长有五六寸，从上唇的上面直拖到下颏的下面去。形状是从顶到底，一样的粗细。简捷说，便是一条细长的香肠似的东西，在脸中央拖着罢了。
@@ -131,6 +121,11 @@ $
 </font>
 
 ---------------------------- BORDER ------------------------------------
+
+**usage**:
+```html
+<font class="i_[l|r|n]_[a...]_[b...]" id="caption"></font>
+```
 
 ## Nested Title (2)
 

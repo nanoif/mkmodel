@@ -15,7 +15,7 @@ export function addCyTags(startBlock) {
             if (!destTags[ti][i])
                 continue;
             let str = destTags[ti][i].innerHTML;
-            let pattern = new RegExp("(([a-zA-Z0-9])([a-zA-Z0-9]|\\s|\\n)*)|<[a-zA-Z0-9]\\s*[^>]*>(.|\\n)*</[a-zA-Z0-9]*>|((\\$((.|\n)+?)\\$))|(\\$\\$((.|\n)+?)\\$\\$)|<br>|<br/>|<img.*>","g");
+            let pattern = new RegExp("(([a-zA-Z0-9])([a-zA-Z0-9]|\\s|\\n)*)|<[a-zA-Z0-9]\\s*[^>]*>(.|\\n)*</[a-zA-Z0-9]*>|((\\$((.|\n)+?)\\$))|(\\$\\$((.|\n)+?)\\$\\$)|<br>|<br/>|<img.*>|<link.*>","g");
             let result;
             let nstr = str;
             let offset = 0

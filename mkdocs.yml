@@ -35,6 +35,7 @@ extra_css:
   - css/extra/admonitions.css
   - css/extra/code-blocks.css
   - css/gadgets/book.css
+  - css/gadgets/loading.css
   - 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
 
 extra_javascript:
@@ -52,6 +53,13 @@ nav:
       - extra code blocks: general/extracb.md
       - test_nested_tab:
           - 1: general/nested/1.md
+      - gadgets:
+          - book: general/gadgets/book.md
+          - moon: general/gadgets/moon.md
+          - text: general/gadgets/text.md
+          - terminal1: general/gadgets/terminal1.md
+          - terminal2: general/gadgets/terminal2.md
+          - terminal3: general/gadgets/terminal3.md
   - test tab🧭:
       - general: test_tab/index.md
       - code: test_tab/code.md

@@ -1,0 +1,1 @@
+<div class="loading" style="left: 40px; margin-top: 40px;"></div>
