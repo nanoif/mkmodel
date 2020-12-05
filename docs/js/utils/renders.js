@@ -148,7 +148,7 @@ export function renderFloatCodeBlocks(fontBlock, funcParams) {
 
 export function renderTables(fontBlock, funcParams) {
     let tables = fontBlock.getElementsByTagName('table');
-    if (!tables) {
+    if (!tables || tables.length == 0) {
         return;
     }
 
@@ -196,6 +196,8 @@ export function renderTables(fontBlock, funcParams) {
         }
     }
 
-    replaceElementByNewTag(fontBlock, 'div')
+    console.log(fontBlock)
+    let r = replaceElementByNewTag(fontBlock, 'div')
+    console.log('scc', r)
 
 }
