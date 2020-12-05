@@ -195,4 +195,7 @@ export function renderTables(fontBlock, funcParams) {
             }
         }
     }
+
+    replaceElementByNewTag(fontBlock, 'div')
+
 }
