@@ -1,6 +1,10 @@
 site_name: MkModel
 
 theme:
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+  
   name: null
   custom_dir: material
   palette:

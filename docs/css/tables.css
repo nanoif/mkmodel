@@ -32,7 +32,7 @@
 }
 
 /* first th */
-.md-typeset__table table:not([class]) thead th.firsthead {
+.md-typeset__table table:not([class]) thead th:first-child {
     border-left: none;
     border-top: none;
     border-right: 0.05rem solid var(--deep-color-simple-table-border);
@@ -40,17 +40,95 @@
 
 /* general td */
 .md-typeset__table table:not([class]) tbody td {
-    padding: 0.15rem 0.9rem 0.15rem 0.9rem;
+    padding: 0.35rem 0.9rem 0.25rem 0.9rem;
     border-left: 0.05rem solid var(--deep-color-simple-table-border);
     border-right: none;
     border-top: none;
     border-bottom: none;
+    line-height: 1rem;
+    
 }
 
 /* first-column td */
-.md-typeset__table table:not([class]) tbody td.firstcol {
+.md-typeset__table table:not([class]) tbody td:first-child {
     border-left: none;
     border-bottom: none;
     border-top: 0.05rem solid #ffffff;
     border-right: 0.05rem solid var(--deep-color-simple-table-border);
 }
+
+/*********** 2 ***************/
+
+table.matable {
+    display: inline-block;
+    max-width: 100%;
+    overflow: auto;
+    font-size: 0.64rem;
+    background: var(--md-default-bg-color);
+    border-radius: 0.1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05), 0 0 0.05rem rgba(0, 0, 0, 0.1);
+    touch-action: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+@media print {
+    table:not([class]) {
+      display: table;
+    }
+}
+
+table.matable + * {
+    margin-top: 1.5em;
+}
+
+table.matable th > *:first-child,
+table.matable td > *:first-child {
+    margin-top: 0;
+}
+
+table.matable th > *:last-child,
+table.matable td > *:last-child {
+    margin-bottom: 0;
+}
+
+table.matable th:not([align]),
+table.matable td:not([align]) {
+    text-align: left;
+}
+
+table.matable th {
+    min-width: 5rem;
+    padding: 0.6rem 0.64rem 0.8rem 0.64rem;
+    color: var(--md-default-bg-color);
+    vertical-align: top;
+    background-color: var(--md-default-fg-color--light);
+}
+
+table.matable th a {
+    color: inherit;
+}
+
+table.matable td {
+    padding: 0.6rem 0.64rem 0.8rem 0.64rem;
+    vertical-align: top;
+    border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+table.matable tr {
+    transition: background-color 125ms;
+}
+
+table.matable tr:hover {
+    background-color: rgba(0, 0, 0, 0.035);
+    box-shadow: 0 0.05rem 0 var(--md-default-bg-color) inset;
+}
+
+table.matable tr:first-child td {
+    border-top: 0;
+}
+
+table.matable a {
+    word-break: normal;
+}
+  

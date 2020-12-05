@@ -153,6 +153,8 @@ export function renderTables(fontBlock, funcParams) {
     }
 
     let marginLeft = '0', marginRight = '0', marginTop = '0', marginBottom = '0';
+    let tdPadding = false, tdPaddingTop = '5', tdPaddingBottom = '5';
+    let tableClassName = '';
 
     for (let i = 1; i < funcParams.length; ++i) {
         let keyName = funcParams[i].split(KEY_SPLITER)[0];
@@ -167,6 +169,15 @@ export function renderTables(fontBlock, funcParams) {
             marginLeft = nums[0];
             if (nums.length > 1) marginRight = nums[1];
         }
+        else if (keyName == 'c') {
+            tableClassName = funcParams[i].substring(nidx).split(PARAM_SPLITER)[0];
+        }
+        else if (keyName == 'h') {
+            let nums = funcParams[i].substring(nidx).split(PARAM_SPLITER);
+            tdPadding = true;
+            tdPaddingTop = nums[0];
+            if (nums.length > 1) tdPaddingBottom = nums[1];
+        }
     }
 
     for (let i = 0; i < tables.length; ++i) {
@@ -174,5 +185,14 @@ export function renderTables(fontBlock, funcParams) {
         tables[i].style.marginRight = px2rem(marginRight);
         tables[i].style.marginTop = px2rem(marginTop);
         tables[i].style.marginBottom = px2rem(marginBottom);
+        if (tableClassName != '')
+            tables[i].className = tableClassName;
+        if (tdPadding) {
+            let tds = tables[i].getElementsByTagName('td');
+            for (let j = 0; j < tds.length; ++j) {
+                tds[j].style.paddingTop = px2rem(tdPaddingTop);
+                tds[j].style.paddingBottom = px2rem(tdPaddingBottom);
+            }
+        }
     }
 }

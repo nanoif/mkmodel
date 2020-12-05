@@ -1,7 +1,6 @@
 import {addpTagInBlockTexts} from './utils/addtags.js'
 import {renderImagleBlocks, renderFloatCodeBlocks, renderTables} from './utils/renders.js'
 import {addCodeBlocksCSS} from './functions/add_code_css.js'
-import {alterTableTdClasses} from './functions/alt_table_td_classes.js'
 import {addCyTags} from './functions/font.js'
 
 
@@ -36,9 +35,6 @@ addpTagInBlockTexts(document.getElementsByTagName('blockquote'));
 
 /* add css of code blocks dynamicly */
 addCodeBlocksCSS();
-
-/* custom class of some elements in table:[noclass] */
-alterTableTdClasses(topBlock);
 
 /* add <cy> tags by regexp */
 addCyTags(topBlock);

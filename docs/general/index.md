@@ -71,9 +71,28 @@ $
 
 
 
-### Table: Simple Style
+### Tables: Simple Style & Addition
 
-<font class="t_a%30&20_b%20">
+<font class="t_a%30&20_b%20_h%0&0">
+
+| C Type      | Min Value &emsp;&emsp;&emsp;&emsp;| Max Value &emsp;&emsp;&emsp;&emsp;|
+| :--------- | ------------------------------------------------: |-----:|
+| `[signed] char`   |-127          | 127| 
+| `unsigned char`   | 0            | 255| 
+| `short`           |-32767        | 32767| 
+| `unsigned short`  |0             | 65535| 
+| `int`             |-32767        | 32767| 
+| `unsigned`        |0             | 65535| 
+| `long`            |-2147483647   | 2147483647| 
+| `unsigned long`   |0             | 4294967295| 
+| `int32_t`         |-2147483647 | 2147483647| 
+| `uint32_t`        |0     | 4294967295| 
+| `int64_t`         |-9223372036854775808 | 9223372036854775807| 
+| `uint64_t`        |0     | 18446744073709551615| 
+
+</font>
+
+<font class="t_a%30&20_b%20_h%0&0_c%matable">
 
 | C Type      | Min Value &emsp;&emsp;&emsp;&emsp;| Max Value &emsp;&emsp;&emsp;&emsp;|
 | :--------- | ------------------------------------------------: |-----:|
@@ -114,6 +133,16 @@ $
     - 点对点链路 (point-to-point link) 由链路及其两端单一的发送方和接收方组成。很多链路层协议如 PPP、HDLC 基于此而设计。
     - 广播链路 (broadcast link) 能够让多个发送和接收节点接入到同一个共享链路上。广播的含义是当任何一个节点传输一个帧时，信道广播该帧，每个其他节点都收到一个副本，以太网和无线局域网均基于此实现。
 
+!!! caution "caution"
+    | <font face="Consolas">NetID</font> | <font face="Consolas">HostID</font> | 作为源 <font face="Consolas">IP</font> | 作为目的 <font face="Consolas">IP</font> | 用途 |
+    | :--: | :--: | :--:| :--: | :--:|
+    | 全0 | 全0 | 可以 | 不可以 | 在本局域网范围内表示本机；在路由表中用于表示默认路由 |
+    | 全0| 特定值 | 不可以 | 可以 | 用于表示本局域网内某个特定主机 |
+    | 全1 | 全1 | 不可以 | 可以 | 本局域网内广播地址 |
+    | 特定值 | 全0 | 不可以 | 不可以 | 网络的地址，表示一个网络 |
+    | 特定值 | 全1 | 不可以 | 可以 | 直接广播地址，对特定网络（另外一个网络）上所有主机进行广播 |
+    | 127 | 非全0或非全1的任何数 | 可以 | 可以 | 环回地址，用于本地软件环回测试 |
+
 ### Img
 
 <font class="i_r_a%10&10_b%10&110" id="RbTree Delete 删除">
@@ -137,4 +166,9 @@ $
 
 
 ##### Nested Title (5)
+
+
+
+
+
 
