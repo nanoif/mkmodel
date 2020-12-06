@@ -201,5 +201,8 @@ export function renderTables(fontBlock, funcParams) {
 
 export function removeInvalidFontBlock() {
     let body = document.getElementsByTagName('body')[0];
+    console.log(body.innerHTML.search(/<p><font.*><\/font><\/p>/g))
+    console.log((body.innerHTML.length))
     body.innerHTML = body.innerHTML.replace(/<p><font.*><\/font><\/p>/g, "");
+    console.log((body.innerHTML.length))
 }

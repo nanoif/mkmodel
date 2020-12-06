@@ -39,4 +39,4 @@ addCodeBlocksCSS();
 /* add <cy> tags by regexp */
 addCyTags(topBlock);
 
-removeInvalidFontBlock()
+// removeInvalidFontBlock()
