@@ -196,8 +196,10 @@ export function renderTables(fontBlock, funcParams) {
         }
     }
 
-    console.log(fontBlock)
-    let r = replaceElementByNewTag(fontBlock, 'div')
-    console.log('scc', r)
+    replaceElementByNewTag(fontBlock, 'div')
+}
 
+export function removeInvalidFontBlock() {
+    let body = document.getElementsByTagName('body')[0];
+    body.innerHTML = body.innerHTML.replace(/<p><font.*><\/font><\/p>/g, "");
 }

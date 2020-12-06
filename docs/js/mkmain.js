@@ -1,5 +1,5 @@
 import {addpTagInBlockTexts} from './utils/addtags.js'
-import {renderImagleBlocks, renderFloatCodeBlocks, renderTables} from './utils/renders.js'
+import {renderImagleBlocks, renderFloatCodeBlocks, renderTables, removeInvalidFontBlock} from './utils/renders.js'
 import {addCodeBlocksCSS} from './functions/add_code_css.js'
 import {addCyTags} from './functions/font.js'
 
@@ -10,13 +10,13 @@ topBlock.className += " generalcy";
 
 
 /* render elements according to parameters in <font> elements */
-let fontBlocks = topBlock.getElementsByTagName('font')
+let fontBlocks = topBlock.getElementsByTagName('font');
 for (let i = 0; i < fontBlocks.length; ++i) {
     let className = fontBlocks[i].getAttribute('class')
     if (!className)
-        continue
-    let funcParams = className.split('_')
-    let funcType = funcParams[0].split('%')[0]
+        continue;
+    let funcParams = className.split('_');
+    let funcType = funcParams[0].split('%')[0];
 
     if (funcType == 'c') {
         renderFloatCodeBlocks(fontBlocks[i], funcParams);
@@ -38,3 +38,5 @@ addCodeBlocksCSS();
 
 /* add <cy> tags by regexp */
 addCyTags(topBlock);
+
+removeInvalidFontBlock()
