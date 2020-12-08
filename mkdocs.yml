@@ -48,28 +48,6 @@ extra_javascript:
   - 'js/mkmain.js'
   - 'js/katex.js'
   
-
-nav:
-  - home: index.md
-  - general👾:
-      - general: general/index.md
-      - code: general/code.md
-      - extra code blocks: general/extracb.md
-      - test_nested_tab:
-          - 1: general/nested/1.md
-      - gadgets:
-          - book: general/gadgets/book.md
-          - moon: general/gadgets/moon.md
-          - text: general/gadgets/text.md
-          - terminal1: general/gadgets/terminal1.md
-          - terminal2: general/gadgets/terminal2.md
-          - terminal3: general/gadgets/terminal3.md
-  - test tab🧭:
-      - general: test_tab/index.md
-      - code: test_tab/code.md
-      - nested:
-          - n2: test_tab/nested/2.md
-
 markdown_extensions:
   - abbr
   - attr_list
@@ -93,3 +71,26 @@ markdown_extensions:
 
 plugins:
   - search
+
+nav:
+  - home: index.md
+  - general👾:
+      - general: general/index.md
+      - code: general/code.md
+      - extra code blocks: general/extracb.md
+      - test_nested_tab:
+          - _outline_: general/nested/outline.md
+          - 1: general/nested/1.md
+      - gadgets:
+          - book: general/gadgets/book.md
+          - moon: general/gadgets/moon.md
+          - text: general/gadgets/text.md
+          - terminal1: general/gadgets/terminal1.md
+          - terminal2: general/gadgets/terminal2.md
+          - terminal3: general/gadgets/terminal3.md
+  - test tab🧭:
+      - general: test_tab/index.md
+      - code: test_tab/code.md
+      - nested:
+          - n2: test_tab/nested/2.md
+          
