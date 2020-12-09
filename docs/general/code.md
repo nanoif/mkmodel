@@ -10,6 +10,7 @@
 /* randomly select an element */
 
 int RandomizedSelect(int A[], int index, int left, int right) {
+
     if (left == right) {
         return A[left];
     }
@@ -21,8 +22,10 @@ int RandomizedSelect(int A[], int index, int left, int right) {
     } else {
         return RandomizedSelect(A, index, left, i - 1);
     }
+
 }
-```
+
+``` 
 
 ### Tabbed Code Blocks
 
@@ -36,17 +39,21 @@ int RandomizedSelect(int A[], int index, int left, int right) {
         return 0;
     }
     ```
-=== "&emsp;C++&emsp;"
+
+=== "&emsp; C++&emsp; "
 
     ```c++ linenums="1"
     #include <iostream>
 
     /* main entry */
     int main(void) {
-        std::cout << "Hello world!" << std::endl;
-        return 0;
+        std::cout << "Hello world!" << std::endl; 
+        return 0; 
     }
-    ```
+
+    
+
+``` 
 
 === "&emsp;Python&emsp;"
 
@@ -61,9 +68,12 @@ int RandomizedSelect(int A[], int index, int left, int right) {
     ```C linenums="1"
     /* Hello, World ! */
     int main() {
-        printf("Hello World!");
+        printf("Hello World!"); 
     }
-    ```
+
+    
+
+``` 
 
 ??? adcodes "RBTree  Delete"
 
@@ -105,8 +115,8 @@ int RandomizedSelect(int A[], int index, int left, int right) {
 
 ### Tabbed Code In Admonition
 
-
 !!! adcodes "Codes"
+
     === "&emsp;C&emsp;"
 
         ```c linenums="1"
@@ -114,10 +124,12 @@ int RandomizedSelect(int A[], int index, int left, int right) {
 
         /* main entry */
         int main(void) {
-            printf("Hello world!\n");
-            return 0;
+            printf("Hello world!\n"); 
+            return 0; 
         }
-        ```
+        
+
+``` 
 
     === "&emsp;C++&emsp;"
 
@@ -131,8 +143,8 @@ int RandomizedSelect(int A[], int index, int left, int right) {
         }
         ```
 
-
 ??? adcodes "Codes"
+
     === "&emsp;C&emsp;"
 
         ```c linenums="1"
@@ -140,10 +152,12 @@ int RandomizedSelect(int A[], int index, int left, int right) {
 
         /* main entry */
         int main(void) {
-            printf("Hello world!\n");
-            return 0;
+            printf("Hello world!\n"); 
+            return 0; 
         }
-        ```
+        
+
+``` 
 
     === "&emsp;C++&emsp;"
 
@@ -159,7 +173,7 @@ int RandomizedSelect(int A[], int index, int left, int right) {
 
 ### Without Line Numbers
 
-```C
+``` C
 /* randomly select an element */
 
 int RandomizedSelect(int A[], int index, int left, int right) {
@@ -178,7 +192,10 @@ int RandomizedSelect(int A[], int index, int left, int right) {
 ```
 
 !!! adcodes "Codes"
-    ```C
+
+    
+
+``` C
     /* randomly select an element */
 
     int RandomizedSelect(int A[], int index, int left, int right) {
@@ -197,7 +214,10 @@ int RandomizedSelect(int A[], int index, int left, int right) {
     ```
 
 ??? adcodes "Codes"
-    ```C
+
+    
+
+``` C
     /* randomly select an element */
 
     int RandomizedSelect(int A[], int index, int left, int right) {

@@ -12,7 +12,7 @@
     --ul1-margin-top: 0.3rem;
     --ul1-line-height: 1.2rem;
     --ul2-margin-left: 1.85rem;
-    --ul2-margin-top: 0rem;
+    --ul2-margin-top: -0.2rem;
     --ul2-line-height: 1.2rem;
 }
 
@@ -29,7 +29,7 @@
 
 .md-typeset ul li ul {
     margin-top:       0.5rem;
-    margin-bottom:    0.5rem;
+    margin-bottom:    0.2rem;
     line-height:      var(--ul2-line-height);
     list-style-type:  circle;
 }
@@ -53,16 +53,23 @@ div.md-container nav.md-tabs {
 .floatpic .caption {
     font-family: cycn-eng, cycn;
     line-height: 12px;
-    font-size: 0.1rem;
+    font-size: 0.2rem;
     color: #7e7e7e;
 }
 
+.floatpic p {
+    display: inline;
+}
+
 /********** blockquotes **********/
-/* blockquote {
-    word-wrap: break-word;
-    font-size: 15px;
-    letter-spacing: 0.44px;
-} */
+.md-typeset blockquote {
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+.md-typeset blockquote p {
+    display: inline;
+}
 
 
 /*********************************************************************************/
@@ -114,7 +121,7 @@ div.md-container nav.md-tabs {
 }
 
 .generalcy h4 {
-    font-size: 0.86rem;
+    font-size: 0.78rem;
 }
 
 
@@ -159,4 +166,9 @@ div.md-sidebar.md-sidebar--secondary ul.md-nav__list {
     font-family: mtt, cycn;
     font-size: var(--generalcy-font-size);
     word-break: break-all;
+}
+
+.md-typeset pre {
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
 }
