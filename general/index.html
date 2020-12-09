@@ -1,0 +1,1277 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/harddisk4.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.3">
+    
+    
+      
+        
+            <title>general - MkModel</title>
+        
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2cb7adb3.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f0267088.min.css">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/general.css">
+    
+      <link rel="stylesheet" href="../css/fonts.css">
+    
+      <link rel="stylesheet" href="../css/code-admonition.css">
+    
+      <link rel="stylesheet" href="../css/katex.css">
+    
+      <link rel="stylesheet" href="../css/tables.css">
+    
+      <link rel="stylesheet" href="../css/extra/admonitions.css">
+    
+      <link rel="stylesheet" href="../css/extra/code-blocks.css">
+    
+      <link rel="stylesheet" href="../css/gadgets/book.css">
+    
+      <link rel="stylesheet" href="../css/gadgets/loading.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="mkmodel" data-md-color-primary="" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#paragraph" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="MkModel" class="md-header-nav__button md-logo" aria-label="MkModel">
+      
+  
+  
+  
+  
+  <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m128 68.143h188v358.214h-188z" fill="#09a1e5"/><path d="m256 0-128 68.143 128 68.143h128v-68.143z" fill="#3ec3ff"/><path d="m324 136.286 60 375.714 128-68.143v-307.571z" fill="#962b7c"/><path d="m256 136.286v136.286l-50 85.642 50 85.643 128 68.143v-375.714z" fill="#cb2e81"/><path d="m512 136.286-128-68.143-128 68.143 128 68.142z" fill="#ff3187"/><path d="m68 272.572 60 239.428 128-68.143v-171.285z" fill="#ff9259"/><path d="m0 272.572v171.285l128 68.143v-239.428z" fill="#ffb24a"/><path d="m128 204.428-128 68.144 128 68.142 128-68.142z" fill="#ffd23b"/></g></svg>
+
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            MkModel
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              general
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." class="md-tabs__link">
+        home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link md-tabs__link--active">
+          general👾
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../test_tab/" class="md-tabs__link">
+          test tab🧭
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+
+  
+  
+   
+  
+  
+  <script>
+  document.getElementsByClassName('md-header')[0].style.setProperty('--md-primary-fg-color', '#666666');
+  var tabs1 = document.getElementsByClassName('md-tabs')[0]; if(tabs1) tabs1.style.setProperty('--md-primary-fg-color', '#666666');
+  // 'md-default-color'
+  // var tabs2 = document.getElementsByClassName('md-nav__title'); 
+  // if (tabs2)
+  //   for (var i = 0; i < tabs2.length; ++i)
+  //     tabs2[i].style.setProperty('--md-primary-fg-color', '#666666');
+  </script>
+
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkModel" class="md-nav__button md-logo" aria-label="MkModel">
+      
+  
+  
+  
+  
+  <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m128 68.143h188v358.214h-188z" fill="#09a1e5"/><path d="m256 0-128 68.143 128 68.143h128v-68.143z" fill="#3ec3ff"/><path d="m324 136.286 60 375.714 128-68.143v-307.571z" fill="#962b7c"/><path d="m256 136.286v136.286l-50 85.642 50 85.643 128 68.143v-375.714z" fill="#cb2e81"/><path d="m512 136.286-128-68.143-128 68.143 128 68.142z" fill="#ff3187"/><path d="m68 272.572 60 239.428 128-68.143v-171.285z" fill="#ff9259"/><path d="m0 272.572v171.285l128 68.143v-239.428z" fill="#ffb24a"/><path d="m128 204.428-128 68.144 128 68.142 128-68.142z" fill="#ffd23b"/></g></svg>
+
+
+    </a>
+    MkModel
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+    <li class="md-nav__item">
+        <a href=".." class="md-nav__link">
+        home
+        </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      
+      
+        <a>general👾</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="general👾" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        general👾 <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        general
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    
+        <a href="./" class="md-nav__link md-nav__link--active">
+        general
+        </a>
+    
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph" class="md-nav__link">
+    Paragraph
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-formula" class="md-nav__link">
+    Math Formula
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permalink" class="md-nav__link">
+    Permalink
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonts" class="md-nav__link">
+    Fonts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables-simple-style-addition" class="md-nav__link">
+    Tables: Simple Style &amp; Addition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admonitions" class="md-nav__link">
+    Admonitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#img" class="md-nav__link">
+    Img
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-title-2" class="md-nav__link">
+    Nested Title (2)
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Title (2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-title-3" class="md-nav__link">
+    Nested Title (3)
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Title (3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-title-4" class="md-nav__link">
+    Nested Title (4)
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Title (4)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-title-5" class="md-nav__link">
+    Nested Title (5)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="code/" class="md-nav__link">
+        code
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="extracb/" class="md-nav__link">
+        extra code blocks
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      
+      
+        <a href="nested/outline/">test_nested_tab</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="test_nested_tab" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        test_nested_tab <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="nested/1/" class="md-nav__link">
+        1
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      
+      
+        <a>gadgets</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="gadgets" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        gadgets <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="gadgets/book/" class="md-nav__link">
+        book
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="gadgets/moon/" class="md-nav__link">
+        moon
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="gadgets/text/" class="md-nav__link">
+        text
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="gadgets/terminal1/" class="md-nav__link">
+        terminal1
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="gadgets/terminal2/" class="md-nav__link">
+        terminal2
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="gadgets/terminal3/" class="md-nav__link">
+        terminal3
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      
+      
+        <a>test tab🧭</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="test tab🧭" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        test tab🧭 <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../test_tab/" class="md-nav__link">
+        general
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../test_tab/code/" class="md-nav__link">
+        code
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      
+      
+        <a>nested</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="nested" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        nested <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../test_tab/nested/2/" class="md-nav__link">
+        n2
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph" class="md-nav__link">
+    Paragraph
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-formula" class="md-nav__link">
+    Math Formula
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permalink" class="md-nav__link">
+    Permalink
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonts" class="md-nav__link">
+    Fonts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables-simple-style-addition" class="md-nav__link">
+    Tables: Simple Style &amp; Addition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admonitions" class="md-nav__link">
+    Admonitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#img" class="md-nav__link">
+    Img
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-title-2" class="md-nav__link">
+    Nested Title (2)
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Title (2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-title-3" class="md-nav__link">
+    Nested Title (3)
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Title (3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-title-4" class="md-nav__link">
+    Nested Title (4)
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested Title (4)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-title-5" class="md-nav__link">
+    Nested Title (5)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                    <h1>general</h1>
+                  
+                
+                <h3 id="paragraph">Paragraph<a class="headerlink" href="#paragraph" title="Permanent link">🎶</a></h3>
+<p>一说起禅智内供的鼻子，池尾地方是没一个不知道的。长有五六寸，从上唇的上面直拖到下颏的下面去。形状是从顶到底，一样的粗细。简捷说，便是一条细长的香肠似的东西，在脸中央拖着罢了。
+五十多岁的内供是从还做沙弥的往昔以来，一直到生了内道场供奉的现在为止，心底里始终苦着这鼻子。这也不单因为自己是应该一心渴仰着将来的净土的和尚，于鼻子的烦恼，不很相宜；其实倒在不愿意有人知道他介意于鼻子的事。内供在平时的谈话里，也最怕说出鼻子这一句话来。
+内供之所以烦腻那鼻子的理由，大概有二，——其一，因为鼻子之长，在实际上很不便。第一是吃饭时候，独自不能吃。倘若独自吃时，鼻子便达到碗里的饭上面去了。于是内供叫一个弟子坐在正对面，当吃饭时，使他用一条广一寸长二尺的木板，掀起鼻子来。但是这样的吃饭法，在能掀的弟子和所掀的内供，都不是容易的事。有一回，替代这弟子中童子打了一个喷嚏，因而手一抖，那鼻子便落到粥里去了的故事，那时是连京都都传遍的。——然而这事，却还不是内供之所以以鼻子为苦的重大的理由，内供之所以为苦者，其实却在乎因这鼻子而伤了自尊心这一点。
+池尾的百姓们，替有着这样鼻子的内供设想，说内供幸而是出家人；因为都以为这样的鼻子，是没有女人肯嫁的。其中甚而至于还有这样的批评，说是正因为这样鼻子，所以才来做和尚。然而内供自己，却并不觉得做了和尚，便减了几分鼻子的烦恼去。内供的自尊心，较之为娶妻这类结果的事实所左右的东西，微妙得多多了。因此内供在积极的和消极的两方面，要将这自尊心的毁损恢复过来。</p>
+<h3 id="list">List<a class="headerlink" href="#list" title="Permanent link">🎶</a></h3>
+<p>上面的例子假设数据集的基数为 1。当数据集很大时:</p>
+<ul>
+<li>批量梯度下降 (BGD): 理想的梯度下降方式，对数据集中每个输入计算误差，将所有误差累加取平均作为最终的代价函数，并以此更新参数
+全数据集计算代价函数，更好地代表总体，算出极小值后，保证梯度为 00<ul>
+<li>对每个参数求偏导需要遍历数据集，计算过程很慢</li>
+<li>容易陷入局部极小值点</li>
+</ul>
+</li>
+<li>随机梯度下降 (stochastic, SGD): 每计算一个样本的前向传播后，就计算它的代价，并以之为目标函数更新参数<ul>
+<li>速度快，随机性有利于跳出局部极小值点</li>
+<li>准确度下降，解空间搜索比较盲目，但大体上是最优方向</li>
+<li>若收敛，loss 呈现上下震荡、但总体上下降的趋势</li>
+</ul>
+</li>
+<li>
+<p>小批量梯度下降 (Mini-BGD): SGD 和 BGD 的折中，把数据集随机分成若干 mini batch，每次迭代使用 batch size 个样本进行更新</p>
+<ul>
+<li>合理地增大 batch 可充分利用 GPU，提高内存利用率，减小 loss 的震荡，小 batch 引入随机性，尽管计算速度快，但同样可能造成收敛速度慢甚至不收敛</li>
+<li>合理地增大 batch 可充分利用 GPU，提高内存利用率，减小 loss 的震荡，小 batch 引入随机性，尽管计算速度快，但同样可能造成收敛速度慢甚至不收敛</li>
+</ul>
+</li>
+<li>
+<p>速度快，随机性有利于跳出局部极小值点</p>
+</li>
+<li>准确度下降，解空间搜索比较盲目，但大体上是最优方向</li>
+<li>若收敛，loss 呈现上下震荡、但总体上下降的趋势</li>
+</ul>
+<h3 id="math-formula">Math Formula<a class="headerlink" href="#math-formula" title="Permanent link">🎶</a></h3>
+<p>$$
+L(\bm{w})
+$$</p>
+<p>E: $1 $ plus $1$ $=$ $2$</p>
+<p>$\displaystyle L() $</p>
+<p>$\displaystyle
+L(\bm{w},b,\bm{\xi},\bm{\alpha},\bm{\mu})=\frac{1}{2}||\bm{w}||^2+C\sum_{i=1}^n \xi_i-\sum_{i=1}^n \alpha_i(y_i(\bm{w^\mathrm{T}}\bm{x_i}+b)-1+\xi_i)-\sum_{i=1}^n\mu_i\xi_i \\
+\Leftrightarrow
+$</p>
+<p>$\displaystyle
+\left(\begin{array}{c}
+p_{1} \\
+p_{2} \\
+\vdots \\
+p_{R}
+\end{array}\right)\left(\begin{array}{cccc}
+a_{1} &amp; a_{2} &amp; \cdots &amp; a_{M}
+\end{array}\right)=\left(\begin{array}{cccc}
+p_{1} a_{1} &amp; p_{1} a_{2} &amp; \cdots &amp; p_{1} a_{M} \\
+p_{2} a_{1} &amp; p_{2} a_{2} &amp; \cdots &amp; p_{2} a_{M} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+p_{R} a_{1} &amp; p_{R} a_{2} &amp; \cdots &amp; p_{R} a_{M}
+\end{array}\right)
+$</p>
+<h3 id="permalink">Permalink<a class="headerlink" href="#permalink" title="Permanent link">🎶</a></h3>
+<p>⭐🤯🥳🧐😈🤖👾❤️‍🔥💯💤🌺🌸💮🌼🍑🍄🌐🧭🌍⏳🌟🪐🌠🌌🎆🎇🏅🎼🎵🎶🛡⚠⏩🔆🏁🚩🔖✉📒📖📔📙📕📑🗂📈📌📎🔒🔑🗝🗡⚔🔫🔭📡🧬🩺💠🔘</p>
+<h3 id="fonts">Fonts<a class="headerlink" href="#fonts" title="Permanent link">🎶</a></h3>
+<ul>
+<li>en:<ul>
+<li>cycn-eng:&emsp; <font face="cycn-eng">If winter comes , can spring be far behind ?</font></li>
+<li>monaco:&emsp; <font face="Monaco-inside">If winter comes , can spring be far behind ?</font></li>
+<li>consolas:&emsp; <font face="Consolas">If winter comes , can spring be far behind ?</font></li>
+<li>m:&emsp; <mag>If winter comes , can spring be far behind ?</mag></li>
+<li>msf:&emsp; <font face="msf">If winter comes , can spring be far behind ?</font></li>
+</ul>
+</li>
+</ul>
+<h3 id="tables-simple-style-addition">Tables: Simple Style &amp; Addition<a class="headerlink" href="#tables-simple-style-addition" title="Permanent link">🎶</a></h3>
+<p><font class="t_a%30&20_b%20_h%0&0"></p>
+<table>
+<thead>
+<tr>
+<th align="left">C Type</th>
+<th align="right">Min Value &emsp;&emsp;&emsp;&emsp;</th>
+<th align="right">Max Value &emsp;&emsp;&emsp;&emsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>[signed] char</code></td>
+<td align="right">-127</td>
+<td align="right">127</td>
+</tr>
+<tr>
+<td align="left"><code>unsigned char</code></td>
+<td align="right">0</td>
+<td align="right">255</td>
+</tr>
+<tr>
+<td align="left"><code>short</code></td>
+<td align="right">-32767</td>
+<td align="right">32767</td>
+</tr>
+<tr>
+<td align="left"><code>unsigned short</code></td>
+<td align="right">0</td>
+<td align="right">65535</td>
+</tr>
+<tr>
+<td align="left"><code>int</code></td>
+<td align="right">-32767</td>
+<td align="right">32767</td>
+</tr>
+<tr>
+<td align="left"><code>unsigned</code></td>
+<td align="right">0</td>
+<td align="right">65535</td>
+</tr>
+<tr>
+<td align="left"><code>long</code></td>
+<td align="right">-2147483647</td>
+<td align="right">2147483647</td>
+</tr>
+<tr>
+<td align="left"><code>unsigned long</code></td>
+<td align="right">0</td>
+<td align="right">4294967295</td>
+</tr>
+<tr>
+<td align="left"><code>int32_t</code></td>
+<td align="right">-2147483647</td>
+<td align="right">2147483647</td>
+</tr>
+<tr>
+<td align="left"><code>uint32_t</code></td>
+<td align="right">0</td>
+<td align="right">4294967295</td>
+</tr>
+<tr>
+<td align="left"><code>int64_t</code></td>
+<td align="right">-9223372036854775808</td>
+<td align="right">9223372036854775807</td>
+</tr>
+<tr>
+<td align="left"><code>uint64_t</code></td>
+<td align="right">0</td>
+<td align="right">18446744073709551615</td>
+</tr>
+</tbody>
+</table>
+<p></font></p>
+<p><font class="t_a%30&20_b%20_h%0&0_c%matable"></p>
+<table>
+<thead>
+<tr>
+<th align="left">C Type</th>
+<th align="right">Min Value &emsp;&emsp;&emsp;&emsp;</th>
+<th align="right">Max Value &emsp;&emsp;&emsp;&emsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>[signed] char</code></td>
+<td align="right">-127</td>
+<td align="right">127</td>
+</tr>
+<tr>
+<td align="left"><code>unsigned char</code></td>
+<td align="right">0</td>
+<td align="right">255</td>
+</tr>
+<tr>
+<td align="left"><code>short</code></td>
+<td align="right">-32767</td>
+<td align="right">32767</td>
+</tr>
+<tr>
+<td align="left"><code>unsigned short</code></td>
+<td align="right">0</td>
+<td align="right">65535</td>
+</tr>
+<tr>
+<td align="left"><code>int</code></td>
+<td align="right">-32767</td>
+<td align="right">32767</td>
+</tr>
+<tr>
+<td align="left"><code>unsigned</code></td>
+<td align="right">0</td>
+<td align="right">65535</td>
+</tr>
+<tr>
+<td align="left"><code>long</code></td>
+<td align="right">-2147483647</td>
+<td align="right">2147483647</td>
+</tr>
+<tr>
+<td align="left"><code>unsigned long</code></td>
+<td align="right">0</td>
+<td align="right">4294967295</td>
+</tr>
+<tr>
+<td align="left"><code>int32_t</code></td>
+<td align="right">-2147483647</td>
+<td align="right">2147483647</td>
+</tr>
+<tr>
+<td align="left"><code>uint32_t</code></td>
+<td align="right">0</td>
+<td align="right">4294967295</td>
+</tr>
+<tr>
+<td align="left"><code>int64_t</code></td>
+<td align="right">-9223372036854775808</td>
+<td align="right">9223372036854775807</td>
+</tr>
+<tr>
+<td align="left"><code>uint64_t</code></td>
+<td align="right">0</td>
+<td align="right">18446744073709551615</td>
+</tr>
+</tbody>
+</table>
+<p></font></p>
+<h3 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">🎶</a></h3>
+<p>一个关系中可能由多组候选码，因此，用主码 (primary key) 代表被数据库设计者选中的、用以在一个关系中区分不同元组的候选码。主码的选择应当慎重，应选择那些值不会或极少变化的那些属性，例如一个人的地址就不应被选为主码。习惯上，把一个关系的主码属性排列在其他属性前。</p>
+<div class="admonition hint">
+<p class="admonition-title">hint</p>
+<ul>
+<li>点对点链路 (point-to-point link) 由链路及其两端单一的发送方和接收方组成。很多链路层协议如 PPP、HDLC 基于此而设计。</li>
+<li>广播链路 (broadcast link) 能够让多个发送和接收节点接入到同一个共享链路上。广播的含义是当任何一个节点传输一个帧时，信道广播该帧，每个其他节点都收到一个副本，以太网和无线局域网均基于此实现。</li>
+</ul>
+</div>
+<details class="hint" open="open"><summary>hint</summary><ul>
+<li>点对点链路 (point-to-point link) 由链路及其两端单一的发送方和接收方组成。很多链路层协议如 PPP、HDLC 基于此而设计。</li>
+<li>广播链路 (broadcast link) 能够让多个发送和接收节点接入到同一个共享链路上。广播的含义是当任何一个节点传输一个帧时，信道广播该帧，每个其他节点都收到一个副本，以太网和无线局域网均基于此实现。</li>
+</ul>
+</details>
+<div class="admonition caution">
+<p class="admonition-title">caution</p>
+<ul>
+<li>点对点链路 (point-to-point link) 由链路及其两端单一的发送方和接收方组成。很多链路层协议如 PPP、HDLC 基于此而设计。</li>
+<li>广播链路 (broadcast link) 能够让多个发送和接收节点接入到同一个共享链路上。广播的含义是当任何一个节点传输一个帧时，信道广播该帧，每个其他节点都收到一个副本，以太网和无线局域网均基于此实现。</li>
+</ul>
+</div>
+<details class="caution" open="open"><summary>caution 的</summary><p>de</p>
+<ul>
+<li>点对点链路 (point-to-point link) 由链路及其两端单一的发送方和接收方组成。很多链路层协议如 PPP、HDLC 基于此而设计。</li>
+<li>广播链路 (broadcast link) 能够让多个发送和接收节点接入到同一个共享链路上。广播的含义是当任何一个节点传输一个帧时，信道广播该帧，每个其他节点都收到一个副本，以太网和无线局域网均基于此实现。</li>
+</ul>
+</details>
+<div class="admonition caution">
+<p class="admonition-title">caution</p>
+<table>
+<thead>
+<tr>
+<th align="center"><font face="Consolas">NetID</font></th>
+<th align="center"><font face="Consolas">HostID</font></th>
+<th align="center">作为源 <font face="Consolas">IP</font></th>
+<th align="center">作为目的 <font face="Consolas">IP</font></th>
+<th align="center">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">全0</td>
+<td align="center">全0</td>
+<td align="center">可以</td>
+<td align="center">不可以</td>
+<td align="center">在本局域网范围内表示本机；在路由表中用于表示默认路由</td>
+</tr>
+<tr>
+<td align="center">全0</td>
+<td align="center">特定值</td>
+<td align="center">不可以</td>
+<td align="center">可以</td>
+<td align="center">用于表示本局域网内某个特定主机</td>
+</tr>
+<tr>
+<td align="center">全1</td>
+<td align="center">全1</td>
+<td align="center">不可以</td>
+<td align="center">可以</td>
+<td align="center">本局域网内广播地址</td>
+</tr>
+<tr>
+<td align="center">特定值</td>
+<td align="center">全0</td>
+<td align="center">不可以</td>
+<td align="center">不可以</td>
+<td align="center">网络的地址，表示一个网络</td>
+</tr>
+<tr>
+<td align="center">特定值</td>
+<td align="center">全1</td>
+<td align="center">不可以</td>
+<td align="center">可以</td>
+<td align="center">直接广播地址，对特定网络（另外一个网络）上所有主机进行广播</td>
+</tr>
+<tr>
+<td align="center">127</td>
+<td align="center">非全0或非全1的任何数</td>
+<td align="center">可以</td>
+<td align="center">可以</td>
+<td align="center">环回地址，用于本地软件环回测试</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="img">Img<a class="headerlink" href="#img" title="Permanent link">🎶</a></h3>
+<p><font class="i_r_a%10&10_b%10&110" id="RbTree Delete 删除">
+<img src="./imgs/delete34.png" width="300">一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话 abcdefg 一段话一段话一段话一段话一段话一段话一段话一段话
+</font></p>
+<p>---------------------------- BORDER ------------------------------------</p>
+<p><strong>usage</strong>:
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">font</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;i_[l|r|n]_[a...]_[b...]&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;caption&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<h2 id="nested-title-2">Nested Title (2)<a class="headerlink" href="#nested-title-2" title="Permanent link">🎶</a></h2>
+<h3 id="nested-title-3">Nested Title (3)<a class="headerlink" href="#nested-title-3" title="Permanent link">🎶</a></h3>
+<h4 id="nested-title-4">Nested Title (4)<a class="headerlink" href="#nested-title-4" title="Permanent link">🎶</a></h4>
+<h5 id="nested-title-5">Nested Title (5)<a class="headerlink" href="#nested-title-5" title="Permanent link">🎶</a></h5>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                
+                    home
+                
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="code/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                
+                    code
+                
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        <!-- Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a> -->
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.00f9b4e0.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs', 'tabs.changeicon', 'toc.autohide', 'colors'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script type="module" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+      
+        <script type="module" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+      
+        <script type="module" src="../js/mkmain.js"></script>
+      
+        <script type="module" src="../js/katex.js"></script>
+      
+    
+  </body>
+</html>

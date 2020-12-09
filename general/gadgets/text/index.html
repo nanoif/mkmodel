@@ -1,0 +1,818 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/harddisk4.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.3">
+    
+    
+      
+        
+            <title>text - MkModel</title>
+        
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2cb7adb3.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f0267088.min.css">
+        
+      
+    
+    
+    
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../css/general.css">
+    
+      <link rel="stylesheet" href="../../../css/fonts.css">
+    
+      <link rel="stylesheet" href="../../../css/code-admonition.css">
+    
+      <link rel="stylesheet" href="../../../css/katex.css">
+    
+      <link rel="stylesheet" href="../../../css/tables.css">
+    
+      <link rel="stylesheet" href="../../../css/extra/admonitions.css">
+    
+      <link rel="stylesheet" href="../../../css/extra/code-blocks.css">
+    
+      <link rel="stylesheet" href="../../../css/gadgets/book.css">
+    
+      <link rel="stylesheet" href="../../../css/gadgets/loading.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="mkmodel" data-md-color-primary="" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cross-bar-glitch" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="MkModel" class="md-header-nav__button md-logo" aria-label="MkModel">
+      
+  
+  
+  
+  
+  <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m128 68.143h188v358.214h-188z" fill="#09a1e5"/><path d="m256 0-128 68.143 128 68.143h128v-68.143z" fill="#3ec3ff"/><path d="m324 136.286 60 375.714 128-68.143v-307.571z" fill="#962b7c"/><path d="m256 136.286v136.286l-50 85.642 50 85.643 128 68.143v-375.714z" fill="#cb2e81"/><path d="m512 136.286-128-68.143-128 68.143 128 68.142z" fill="#ff3187"/><path d="m68 272.572 60 239.428 128-68.143v-171.285z" fill="#ff9259"/><path d="m0 272.572v171.285l128 68.143v-239.428z" fill="#ffb24a"/><path d="m128 204.428-128 68.144 128 68.142 128-68.142z" fill="#ffd23b"/></g></svg>
+
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            MkModel
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              text
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
+          general👾
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../test_tab/" class="md-tabs__link">
+          test tab🧭
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+
+  
+  
+   
+  
+  
+  <script>
+  document.getElementsByClassName('md-header')[0].style.setProperty('--md-primary-fg-color', '#666666');
+  var tabs1 = document.getElementsByClassName('md-tabs')[0]; if(tabs1) tabs1.style.setProperty('--md-primary-fg-color', '#666666');
+  // 'md-default-color'
+  // var tabs2 = document.getElementsByClassName('md-nav__title'); 
+  // if (tabs2)
+  //   for (var i = 0; i < tabs2.length; ++i)
+  //     tabs2[i].style.setProperty('--md-primary-fg-color', '#666666');
+  </script>
+
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MkModel" class="md-nav__button md-logo" aria-label="MkModel">
+      
+  
+  
+  
+  
+  <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m128 68.143h188v358.214h-188z" fill="#09a1e5"/><path d="m256 0-128 68.143 128 68.143h128v-68.143z" fill="#3ec3ff"/><path d="m324 136.286 60 375.714 128-68.143v-307.571z" fill="#962b7c"/><path d="m256 136.286v136.286l-50 85.642 50 85.643 128 68.143v-375.714z" fill="#cb2e81"/><path d="m512 136.286-128-68.143-128 68.143 128 68.142z" fill="#ff3187"/><path d="m68 272.572 60 239.428 128-68.143v-171.285z" fill="#ff9259"/><path d="m0 272.572v171.285l128 68.143v-239.428z" fill="#ffb24a"/><path d="m128 204.428-128 68.144 128 68.142 128-68.142z" fill="#ffd23b"/></g></svg>
+
+
+    </a>
+    MkModel
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../.." class="md-nav__link">
+        home
+        </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      
+      
+        <a>general👾</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="general👾" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        general👾 <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../" class="md-nav__link">
+        general
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../code/" class="md-nav__link">
+        code
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../extracb/" class="md-nav__link">
+        extra code blocks
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      
+      
+        <a href="../../nested/outline/">test_nested_tab</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="test_nested_tab" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        test_nested_tab <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../nested/1/" class="md-nav__link">
+        1
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" checked>
+    
+    <label class="md-nav__link" for="nav-2-5">
+      
+      
+        <a>gadgets</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="gadgets" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        gadgets <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../book/" class="md-nav__link">
+        book
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../moon/" class="md-nav__link">
+        moon
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        text
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    
+        <a href="./" class="md-nav__link md-nav__link--active">
+        text
+        </a>
+    
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cross-bar-glitch" class="md-nav__link">
+    cross bar glitch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reveal" class="md-nav__link">
+    reveal
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../terminal1/" class="md-nav__link">
+        terminal1
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../terminal2/" class="md-nav__link">
+        terminal2
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../terminal3/" class="md-nav__link">
+        terminal3
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      
+      
+        <a>test tab🧭</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="test tab🧭" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        test tab🧭 <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../test_tab/" class="md-nav__link">
+        general
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../test_tab/code/" class="md-nav__link">
+        code
+        </a>
+    </li>
+  
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      
+      
+        <a>nested</a>
+      
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="nested" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        nested <!-- maybe this is only for title of tabs -->
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+    <li class="md-nav__item">
+        <a href="../../../test_tab/nested/2/" class="md-nav__link">
+        n2
+        </a>
+    </li>
+  
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cross-bar-glitch" class="md-nav__link">
+    cross bar glitch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reveal" class="md-nav__link">
+    reveal
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h3 id="cross-bar-glitch">cross bar glitch<a class="headerlink" href="#cross-bar-glitch" title="Permanent link">🎶</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../css/gadgets/glitchtext.css&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;cross-bar-glitch&quot;</span> <span class="na">data-slice</span><span class="o">=</span><span class="s">&quot;20&quot;</span><span class="p">&gt;</span>
+  Steins;Gate
+<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../js/gadgets/glitchtext.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<style>@import url('../../../css/gadgets/glitchtext.css');</style>
+<div style="display: flex;justify-content: center;align-items: center;">
+<h1 class="cross-bar-glitch" data-slice="20">
+  Steins;Gate
+</h1>
+</div>
+<script src="../../../js/gadgets/glitchtext.js"></script>
+
+<h3 id="reveal">reveal<a class="headerlink" href="#reveal" title="Permanent link">🎶</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../css/gadgets/revealtext.css&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;reveal&quot;</span><span class="p">&gt;</span>sword art online<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../js/gadgets/revealtext.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<style>
+@import url('../../../css/gadgets/revealtext.css');
+.reveal::before, .reveal::after {
+  background: #000000;
+}
+</style>
+<div style="display: flex;justify-content: center;align-items: center;">
+<div class="reveal">sword art online</div>
+</div>
+<script src="../../../js/gadgets/revealtext.js"></script>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../moon/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                
+                    moon
+                
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../terminal1/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                
+                    terminal1
+                
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        <!-- Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a> -->
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.00f9b4e0.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.tabs', 'tabs.changeicon', 'toc.autohide', 'colors'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script type="module" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+      
+        <script type="module" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+      
+        <script type="module" src="../../../js/mkmain.js"></script>
+      
+        <script type="module" src="../../../js/katex.js"></script>
+      
+    
+  </body>
+</html>
